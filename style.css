@@ -1,2 +1,90 @@
-@use './variables' as *;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+body {
+  background-color: #090b1a;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+}
+
+body .card {
+  width: 327px;
+  background-color: #1b1938;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2em;
+}
+
+body .card * {
+  margin: 0;
+}
+
+body .card .image {
+  background-image: url("./images/image-header-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #aa5cdb;
+  width: 327px;
+  height: 240px;
+}
+
+body .card .about {
+  width: 264px;
+  text-align: center;
+}
+
+body .card .about h1 {
+  color: white;
+  font-size: 28px;
+  line-height: 32px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+body .card .about h1 span {
+  color: #aa5cdb;
+}
+
+body .card .about p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+body .card .stats .stat p {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+body .card .stats .stat h5 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,1 +1,70 @@
-@use './variables' as *;
+@import "./variables";
+
+body {
+  background-color: $clr-main-bg;
+  font-size: $fs;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  .card {
+    width: 327px;
+    background-color: $clr-card-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    * {
+      margin: 0;
+    }
+    .image {
+      background-image: url("./images/image-header-mobile.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: multiply;
+      background-color: $clr-accent;
+      width: 327px;
+      height: 240px;
+    }
+    .about {
+      width: 264px;
+      text-align: center;
+      h1 {
+        color: $clr-stats-main-heading;
+        font-size: 28px;
+        line-height: 32px;
+        font-family: $ff-primary;
+        font-weight: 700;
+        margin-bottom: 1em;
+        span {
+          color: $clr-accent;
+        }
+      }
+      p {
+        color: $clr-paragraph;
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 400;
+      }
+    }
+    .stats {
+      .stat {
+        p {
+          color: $clr-stats-main-heading;
+          font-family: $ff-primary;
+          font-size: 24px;
+          font-weight: 700;
+        }
+        h5 {
+          color: $clr-stat-heading;
+          font-size: 12px;
+          font-family: $ff-secondary;
+          line-height: 25px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
