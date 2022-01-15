@@ -15,6 +15,8 @@ body {
     align-items: center;
     justify-content: center;
     gap: 2em;
+    border-radius: 10px;
+    overflow: hidden;
     * {
       margin: 0;
     }
@@ -51,6 +53,9 @@ body {
     }
     .stats {
       .stat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         p {
           color: $clr-stats-main-heading;
           font-family: $ff-primary;
@@ -63,8 +68,54 @@ body {
           font-family: $ff-secondary;
           line-height: 25px;
           letter-spacing: 1px;
+          text-transform: uppercase;
         }
       }
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    .card {
+      width: 1110px;
+      flex-direction: row;
+      justify-content: space-between;
+      .image {
+        background-image: url('./images/image-header-desktop.jpg');
+        width: 540px;
+        height: 446px;
+        order: 2;
+      }
+      .content {
+        width: 403px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10%;
+        .about {
+          width: 100%;
+          h1 {
+            font-size: 36px;
+            line-height: 44px;
+            margin: 0;
+            margin-bottom: 0.5em;
+          }
+          p {
+            width: 374px;
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom: 1em;
+          }
+        }
+        .stats {
+          display: flex;
+          gap: 1em;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+    }
+
   }
 }

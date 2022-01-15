@@ -31,6 +31,8 @@ body .card {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 2em;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 body .card * {
@@ -73,6 +75,19 @@ body .card .about p {
   font-weight: 400;
 }
 
+body .card .stats .stat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body .card .stats .stat p {
   color: white;
   font-family: "Inter", sans-serif;
@@ -86,5 +101,69 @@ body .card .stats .stat h5 {
   font-family: "Lexend Deca", sans-serif;
   line-height: 25px;
   letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1200px) {
+  body .card {
+    width: 1110px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .card .image {
+    background-image: url("./images/image-header-desktop.jpg");
+    width: 540px;
+    height: 446px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  body .card .content {
+    width: 403px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 10%;
+  }
+  body .card .content .about {
+    width: 100%;
+  }
+  body .card .content .about h1 {
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0;
+    margin-bottom: 0.5em;
+  }
+  body .card .content .about p {
+    width: 374px;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 1em;
+  }
+  body .card .content .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=style.css.map */
